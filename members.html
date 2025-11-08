@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Members Area</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <section class="members">
+    <h2>Members Area</h2>
+    <p>Enter your access password to unlock your resource folder:</p>
+
+    <input type="password" id="password" placeholder="Enter password" />
+    <button onclick="checkPassword()">Submit</button>
+
+    <div id="content" style="display:none; margin-top:1.5rem;">
+      <h3>Welcome, member! 🎉</h3>
+      <p>Click below to open your folder:</p>
+      <a href="https://drive.google.com/drive/folders/YOURFOLDERID" target="_blank" class="button">
+        Open Resource Folder
+      </a>
+    </div>
+
+    <p id="error" style="color:red; display:none;">Incorrect password. Try again.</p>
+  </section>
+
+  <script>
+    function checkPassword() {
+      const input = document.getElementById('password').value;
+      const correct = "HEteacher2025!"; // change this
+      if (input === correct) {
+        document.getElementById('content').style.display = 'block';
+        document.getElementById('error').style.display = 'none';
+      } else {
+        document.getElementById('error').style.display = 'block';
+      }
+    }
+  </script>
+</body>
+</html>
