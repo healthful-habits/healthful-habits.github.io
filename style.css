@@ -1,3 +1,4 @@
+* Base Reset */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -6,20 +7,21 @@
 }
 
 body {
-  background-color: #fafafa;
+  background-color: #fbf9f6; /* softer off-white / cream */
   color: #333;
   line-height: 1.6;
 }
 
+/* Header */
 header {
   text-align: center;
   padding: 3rem 1rem;
-  background-color: #e9f5f2;
+  background-color: #e7ede8; /* very soft green / mint tone */
 }
 
 h1 {
   font-size: 2.4rem;
-  color: #2a5d50;
+  color: #4a6b58; /* deeper but soft green */
 }
 
 .tagline {
@@ -27,14 +29,15 @@ h1 {
   font-size: 1.1rem;
 }
 
+/* Navigation */
 nav {
   text-align: center;
-  background: #2a5d50;
+  background: #4a6b58; /* matching header green */
   padding: 0.8rem;
 }
 
 nav a {
-  color: #fff;
+  color: #f9f9f9; /* very light text */
   margin: 0 1rem;
   text-decoration: none;
   font-weight: 600;
@@ -44,6 +47,7 @@ nav a:hover {
   text-decoration: underline;
 }
 
+/* Main Content */
 main {
   padding: 2rem 1rem;
   max-width: 1100px;
@@ -56,15 +60,16 @@ section {
 
 h2 {
   margin-bottom: 1rem;
-  color: #2a5d50;
+  color: #4a6b58;
   text-align: center;
 }
 
+/* Card */
 .card {
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-  padding: 1rem;
+  background: #ffffff;
+  border-radius: 16px; /* more rounded for organic feel */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06); /* lighter softer shadow */
+  padding: 1.2rem;
   margin-bottom: 2rem;
   text-align: center;
 }
@@ -73,29 +78,33 @@ h2 {
   width: 100%;
   border-radius: 12px;
   margin-bottom: 1rem;
+  object-fit: cover;
 }
 
 .card h3 {
-  color: #2a5d50;
+  color: #4a6b58;
   margin-bottom: 0.5rem;
 }
 
 .card p {
   margin-bottom: 1rem;
+  color: #555;
 }
 
+/* Button */
 .button {
   display: inline-block;
-  background-color: #2a5d50;
+  background-color: #6b8f7d; /* softer sage-green */
   color: #fff;
   padding: 0.6rem 1.2rem;
-  border-radius: 6px;
+  border-radius: 8px;
   text-decoration: none;
   font-weight: 600;
+  transition: background-color 0.3s ease;
 }
 
 .button:hover {
-  background-color: #3b7a68;
+  background-color: #799d8b; /* a little lighter / different shade on hover */
 }
 
 /* Pricing Section */
@@ -110,19 +119,19 @@ h2 {
 .price-card {
   background: #fff;
   padding: 1.5rem;
-  border-radius: 12px;
+  border-radius: 16px;
   width: 300px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
   text-align: center;
 }
 
 .price-card.highlight {
-  border: 2px solid #2a5d50;
+  border: 2px solid #4a6b58;
 }
 
 .price {
   font-size: 1.5rem;
-  color: #2a5d50;
+  color: #4a6b58;
   margin-bottom: 0.5rem;
 }
 
@@ -133,6 +142,7 @@ h2 {
 
 .price-card li {
   margin: 0.4rem 0;
+  color: #555;
 }
 
 /* Newsletter */
@@ -145,22 +155,23 @@ h2 {
 
 .newsletter-form input {
   padding: 0.6rem;
-  border-radius: 6px;
+  border-radius: 8px;
   border: 1px solid #ccc;
   width: 250px;
 }
 
 .newsletter-form button {
-  background-color: #2a5d50;
+  background-color: #6b8f7d;
   color: #fff;
   border: none;
   padding: 0.6rem 1.2rem;
-  border-radius: 6px;
+  border-radius: 8px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .newsletter-form button:hover {
-  background-color: #3b7a68;
+  background-color: #799d8b;
 }
 
 .privacy {
@@ -170,14 +181,16 @@ h2 {
   margin-top: 0.5rem;
 }
 
+/* Footer */
 footer {
   text-align: center;
   padding: 1.5rem;
-  background: #2a5d50;
-  color: #fff;
+  background: #4a6b58;
+  color: #f9f9f9;
   font-size: 0.9rem;
 }
 
+/* Responsive */
 @media (max-width: 700px) {
   .pricing {
     flex-direction: column;
